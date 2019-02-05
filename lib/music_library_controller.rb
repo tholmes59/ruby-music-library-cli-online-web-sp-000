@@ -48,6 +48,9 @@ class MusicLibraryController
       Song.all.sort{|a, b| a.name <=> b.name}.each.with_index(1) do |value, index|
       puts "#{index}. #{value.name} - #{value.genre.name}"
     end
+  else
+    puts "Please enter the name of an artist:"
+  end
   end 
   
 end
