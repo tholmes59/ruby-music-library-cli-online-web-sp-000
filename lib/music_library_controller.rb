@@ -66,7 +66,7 @@ class MusicLibraryController
     input = gets.chomp
     if list_songs.include?(input)
       list_songs.each do |artist, song|
-      puts "Playing #{song} by #{value.artist.name}"
+      puts "Playing #{song} by #{artist}"
     end
   end
   end
