@@ -64,13 +64,23 @@ class MusicLibraryController
   def play_song
     puts "Which song number would you like to play?"
     input = gets.chomp
-    if list_songs.include?(input)
-      list_songs.each do |artist, song|
+    if Song.all.include?(input)
+      Song.all.each do |artist, song|
       puts "Playing #{song} by #{artist}"
     end
   end
   end
   
+  # def play_song
+  #   puts "Which song number would you like to play?"
+  #   input = gets.strip.to_i
+  #   if (1..Song.all.length).include?(input)
+  #     song = Song.all.sort{ |a, b| a.name <=> b.name }[input - 1]
+  #   end
+
+  #   puts "Playing #{song.name} by #{song.artist.name}" if song
+  # end
   
-  "Playing Larry Csonka by Action Bronson"
+  
+  # "Playing Larry Csonka by Action Bronson"
 end
