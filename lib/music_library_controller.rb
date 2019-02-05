@@ -24,8 +24,8 @@ class MusicLibraryController
   end 
   
   def list_songs
-    songs.each.with_index(1) do |value, index|
-      ""
+    self.each.with_index(1) do |value, index|
+      "#{index}. #{value}"
     end
   end 
   
