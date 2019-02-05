@@ -21,6 +21,7 @@ class MusicLibraryController
       if input = gets.strip
         break
       end 
+    end
   end 
   
 end
