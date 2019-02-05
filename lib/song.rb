@@ -56,12 +56,7 @@ class Song
   end
   
   def self.create_from_filename(filename)
-    binding.pry
     self.new_from_filename(filename).save
   end 
 
 end
-
-#       expect(song.name).to eq("For Love I Come")
-#       expect(song.artist.name).to eq("Thundercat")
-#       expect(song.genre.name).to eq("dance")
