@@ -55,6 +55,7 @@ class Song
     song.artist = artist
     song.genre = genre
     artist.add_song(song)
+    genre.add_song(song)
     song
   end
 
