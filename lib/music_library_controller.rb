@@ -61,16 +61,6 @@ class MusicLibraryController
     end
   end 
   
-  # def play_song
-  #   puts "Which song number would you like to play?"
-  #   input = gets.chomp
-  #   if Song.all.include?(input)
-  #     Song.all.each do |artist, song|
-  #     puts "Playing #{song} by #{artist}"
-  #   end
-  # end
-  # end
-  
   def play_song
     puts "Which song number would you like to play?"
     input = gets.strip.to_i
@@ -81,6 +71,4 @@ class MusicLibraryController
     puts "Playing #{song.name} by #{song.artist.name}" if song
   end
   
-  
-  # "Playing Larry Csonka by Action Bronson"
 end
