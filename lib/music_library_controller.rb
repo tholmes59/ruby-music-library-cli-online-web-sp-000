@@ -65,6 +65,12 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     input = gets.chomp
     if list_songs.include?(input)
+      list_songs.each do |artist, song|
+      puts "Playing #{song} by #{value.artist.name}"
+    end
+  end
   end
   
+  
+  "Playing Larry Csonka by Action Bronson"
 end
